@@ -1,9 +1,9 @@
 <template>
-  <div class="welcome container">
+  <div class="welcome container center">
     <img src="../assets/logo.png">
     <div class="card">
       <div class="card-content center-align">
-        <h2 class="teal-text">Welcome!</h2>
+        <h2 class="teal-text center">Welcome!</h2>
         <form @submit.prevent="enterChat">
           <label for="name">Enter your name:</label>
           <input type="text" name="name" v-model="name">
@@ -12,6 +12,7 @@
         </form>
       </div>
     </div>
+    <footer><a href="https://www.vecteezy.com/free-vector/chat">Chat Vectors by Vecteezy</a></footer>
   </div>
 </template>
 
@@ -48,6 +49,10 @@ export default {
 }
 .welcome button{
   margin: 30px auto;
+}
+footer {
+  font-size: 12px;  
+  font-style: italic;
 }
 
 </style>
