@@ -1,6 +1,6 @@
 # hope-chat
 
-> A Vue.js project
+> A small chatroom built with VueJS and Firebase. Check out the hosted version here! (https://hope-chat-36745.firebaseapp.com/)
 
 ## Build Setup
 

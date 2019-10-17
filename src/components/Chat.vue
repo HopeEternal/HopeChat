@@ -1,11 +1,11 @@
 <template>
   <div class="chat container">
-    <h2 class="teal-text center">Hope Chat</h2>
+    <h2 class="teal-text text-darken-2 center">Welcome to Hope Chat!</h2>
       <div class="card">
         <div class="card-content">
           <ul class="messages" v-chat-scroll>
             <li v-for="message in messages" :key="message.id">
-              <span class="teal-text">{{ message.name }}</span>
+              <span class="teal-text text-darken-3">{{ message.name }}</span>
               <span class="grey-text text-darken-3">{{ message.content }}</span>
               <span class="grey-text time">{{ message.timestamp }}</span>
             </li>
@@ -56,11 +56,12 @@ export default {
 </script>
 
 <style>
-html {
+body {
+  background-image: url("../assets/Blue_triangulated_background_texture_vector.png")
  
 }
 .chat h2 {
-  font-size: 2.6em;
+  font-size: 3.5em;
   margin-bottom: 40px;
 }
 .chat span {
