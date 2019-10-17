@@ -1,6 +1,6 @@
 <template>
   <div class="welcome container center">
-    <img src="../assets/logo.png">
+    <img src="../assets/logo_nodrop.png">
     <div class="card">
       <div class="card-content center-align">
         <h2 class="teal-text center">Welcome!</h2>
@@ -49,6 +49,9 @@ export default {
 }
 .welcome button{
   margin: 30px auto;
+}
+form label {
+  font-size: 1em;
 }
 footer {
   font-size: 12px;  

@@ -1,20 +1,22 @@
 <template>
-  <div class="chat container">
-    <h2 class="teal-text text-darken-2 center">Welcome to Hope Chat!</h2>
-      <div class="card">
-        <div class="card-content">
-          <ul class="messages" v-chat-scroll>
-            <li v-for="message in messages" :key="message.id">
-              <span class="teal-text text-darken-3">{{ message.name }}</span>
-              <span class="grey-text text-darken-3">{{ message.content }}</span>
-              <span class="grey-text time">{{ message.timestamp }}</span>
-            </li>
-          </ul>
+  <div class="background-container">
+    <div class="chat container">
+      <h2 class="teal-text text-darken-2 center">Welcome to Hope Chat!</h2>
+        <div class="card">
+          <div class="card-content">
+            <ul class="messages" v-chat-scroll>
+              <li v-for="message in messages" :key="message.id">
+                <span class="teal-text text-darken-3">{{ message.name }}</span>
+                <span class="grey-text text-darken-3">{{ message.content }}</span>
+                <span class="grey-text time">{{ message.timestamp }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <NewMessage :name="name" />
+          </div>
         </div>
-        <div class="card-action">
-          <NewMessage :name="name" />
-        </div>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -56,9 +58,8 @@ export default {
 </script>
 
 <style>
-body {
+html {
   background-image: url("../assets/Blue_triangulated_background_texture_vector.png")
- 
 }
 .chat h2 {
   font-size: 3.5em;
