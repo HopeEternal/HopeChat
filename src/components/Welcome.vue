@@ -3,7 +3,7 @@
     <img src="../assets/logo_nodrop.png" />
     <div class="card">
       <div class="card-content center-align">
-        <h2 class="teal-text center">Welcome!</h2>
+        <h2 class="teal-text center">Hi!</h2>
         <form @submit.prevent="enterChat">
           <label for="name">Enter your name:</label>
           <input type="text" name="name" v-model="name" />
